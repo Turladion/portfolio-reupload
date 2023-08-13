@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>George Campbell - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#landing">Home</a></li>
+                <li class="dropdown">
+                    <a href="#projects">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/turladion/pacmen">PacMen Exercise</a>
+                        <a href="https://github.com/turladion/eye-exercise">Eye Exercise</a>
+                        <a href="https://github.com/turladion/real-time-bus-tracking">Real Time Bus Tracking</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="landing">
+            <h1>Welcome to My Portfolio</h1>
+            <div class="video-container">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/IUddgl-6K_M" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>Hi! My name's George, and I'm an up-and-coming coder. Here, I've linked a basic introduction video. Whilst I'm still somewhat new to the field, I have a lot of energy, and I'm willing to bring real work to the table. Thank you so much for taking the time to look at my portfolio. At the top left, under 'projects', you'll be able to see some of the basic work I've done in the MIT xPRO coding boot camp!</p>
+            <img src="https://Turladion/github-portfolio-project-front-end-banking-app\MyFace.jpg" alt="Image description">
+        </section>
+    </main>
+</body>
+</html>
